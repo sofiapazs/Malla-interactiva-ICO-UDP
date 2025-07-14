@@ -34,3 +34,12 @@ body {
   cursor: not-allowed;
   border-color: #ddd;
 }
+
+.fila {
+  margin-bottom: 24px;
+}
+.fila strong {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 16px;
+}
