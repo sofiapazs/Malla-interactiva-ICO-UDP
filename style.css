@@ -1,25 +1,36 @@
 body {
   font-family: sans-serif;
+  background-color: #fff0f5;
+  padding: 20px;
   text-align: center;
-  background: #f5f5f5;
 }
 
-#grid {
+#malla {
   display: grid;
-  grid-template-columns: repeat(10, 40px);
-  grid-gap: 5px;
-  justify-content: center;
-  margin-top: 30px;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 12px;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
-.cell {
-  width: 40px;
-  height: 40px;
-  background-color: #ddd;
-  border: 1px solid #aaa;
+.curso {
+  background-color: #ffc0cb;
+  padding: 12px;
+  border: 2px solid #d48ba0;
+  border-radius: 10px;
   cursor: pointer;
+  transition: 0.3s;
+  font-size: 14px;
 }
 
-.cell.active {
-  background-color: #4CAF50;
+.curso.aprobado {
+  background-color: #c1f0c1;
+  border-color: #4caf50;
+}
+
+.curso.locked {
+  background-color: #f2f2f2;
+  color: #aaa;
+  cursor: not-allowed;
+  border-color: #ddd;
 }
